@@ -1,9 +1,15 @@
+html, body {
+  overflow-x: hidden; /* Disables horizontal scrolling */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  width: 100%; /* Ensures body width is 100% */
+}
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 15%;
+  padding-right: 13%;
   padding-top: 0px;
 }
 
@@ -16,19 +22,18 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-top: 0px;
-  margin-top: 1px;
+  font-family: Verdana,Tahoma,sans-serif;
+  margin-top: .05%;
 }
 
 .nav-links li {
-  margin-left: 45px;
+  margin-left: 40px;
 }
 
 .nav-links a {
   color: rgb(26, 62, 30);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
   transition: color 0.3s;
 }
 
@@ -68,11 +73,12 @@ nav {
 }
 
 .logo img {
-  height: 180px; 
+  height: 130px; 
   width: auto;  
   display: block; 
   max-width: 100%;
   padding-left: 50%;
+  margin-left: 135%;
 }
 
 .signup-form {
@@ -153,29 +159,30 @@ footer {
 
 .welcome-message {
   text-align: center; /* Centers the text */
-  margin-top: 30px; /* Adds space below the header */
+  margin-top: 25px; /* Adds space below the header */
 
 }
 
 .welcome-message h1 {
-  font-weight: bolder; /* Makes the text bold */
-  font-family: fantasy ;
+  font-weight: normal;
+  font-family: 'Courier New', Courier, serif;
   font-size: 4rem; /* Adjust font size */
   color: #2c3e50; /* Dark color for readability */
   text-transform: uppercase; /* Capitalizes the text */
-  letter-spacing: 2px; /* Adds spacing between letters */
+  letter-spacing: -5px; /* Adds spacing between letters */
 }
 
 .welcome-message p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: medium;
+  font-size: 14px;
   font-weight: lighter;
+  margin-top: -1%;
 
 }
 
 .book-consultation {
   text-align: center; /* Centers the button */
-  margin-top: 40px; /* Adds space from the previous content */
+  margin-top: 60px; /* Adds space from the previous content */
 }
 
 .book-btn {
@@ -183,7 +190,7 @@ footer {
   font-size: 18px; /* Sets text size */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color:#bce1bd; /* Green background to represent wellness */
-  color: white; /* White text for contrast */
+  color: rgb(5, 0, 0); /* White text for contrast */
   border: none; /* Removes default border */
   border-radius: 75%; /* Adds rounded corners */
   cursor: pointer; /* Changes the cursor to a hand when hovering */
@@ -191,7 +198,7 @@ footer {
 }
 
 .book-btn:hover {
-  background-color: #095c23; /* Lighter green on hover */
+  background-color: #1d7f3e; /* Lighter green on hover */
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
@@ -199,9 +206,11 @@ footer {
   text-align: center;
   padding: 30px 15px;
   background-color:#bce1bd; /* Background stays permanently */
-  border-radius: 20px;
+  border-radius: 68%;
   margin: 178px auto;
-  width: 75%;
+  margin-left: -50%;
+  margin-right: -50%;
+  width: 125% auto;
 }
 
 .mission h2 {
@@ -228,8 +237,28 @@ footer {
   transform: translateY(0); /* Moves to normal position */
 }
 
+.mission-content p {
+  max-width: 400px;
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.sunflower{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers text above image */
+}
+
 .sunflower img {
   max-width: 300px;
   height: auto;
   border-radius: 10px;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2); /* Slight shadow around the image */
+}
+
+.mission p {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: light;
 }

@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multigrain Wellness</title>
+  <title>Multigrain Wellness Nutrition</title>
+
   <link rel="stylesheet" href="./styles.css">
   <link rel="icon" type="image/png" href="./pictures/logo.png">
+  <script src="script.js"></script>
 </head>
 
 <header>
@@ -41,38 +43,19 @@
       <button class="book-btn">Book a free consultation</button>
     </div>
    
-    <section class="mission">
-      <h2 class="rotating-text">Hi, I'm Savanna <br> My mission</h2>
-
+    <div class="mission">
       <div class="mission-content">
-        <div class="sunflower">
-          <img src="./pictures/sunflower2.jpeg" alt="Sav-sunflower">
-        </div>
-        <p>
-          At Multigrain Wellness, my mission is to empower individuals with a whole-body approach to 
-          health and wellness. Through mindful nutrition and sustainable habits, I aim to guide you 
-          toward a balanced and nourished lifestyle.
-        </p>
+          <div class="sunflower">
+              <p> Hi, I'm Savanna!</p>
+              <img src="./pictures/sunflower2.jpeg" alt="Sav-sunflower">
+          </div>
+          <p>
+            As a licensed nutritionist in Georgia, I am dedicated to guiding you on your path to lasting wellness 
+            and vitality by addressing the root causes of health challenges with compassionate, gut-focused nutrition support. 
+            My goal is to empower you with the knowledge and tools to create sustainable, healthy habits that support your overall well-being.
+          </p>
       </div>
-    </section>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          const missionContent = document.querySelector(".mission-content");
-    
-          function handleScroll() {
-              const sectionTop = missionContent.getBoundingClientRect().top;
-              const windowHeight = window.innerHeight;
-    
-              if (sectionTop < windowHeight * 0.75) { // Triggers animation when 75% visible
-                  missionContent.classList.add("show");
-              }
-          }
-    
-          window.addEventListener("scroll", handleScroll);
-          handleScroll(); // Check immediately if already in view
-      });
-    </script>
+  </div>
 
 </body>
 
