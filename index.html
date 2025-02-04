@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multigrain Wellness</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" href="./pictures/logo.png">
+</head>
+
+<header>
+
+  <nav>
+    <div class="logo">
+        <a href="./index.html"><img src="./pictures/logo.png"></a>
+    </div> 
+    <ul class="nav-links">
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Recipes</a>
+            <div class="dropdown-content">
+                <a href="#">Recipes</a>
+                <a href="#">Blogs</a>
+            </div>
+        </li>
+        <li><a href="#">Nutrition</a></li>
+        <li><a href="./Signup.html">Sign up</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<body>
+
+    <div class="welcome-message">
+     <h1>Welcome to Atlanta's <br> Holistic Nutrition Hub!</h1>
+     <p>Atlanta's source for an integrated health & wellness journey.</p>
+    </div>
+
+    <div class="book-consultation">
+      <button class="book-btn">Book a free consultation</button>
+    </div>
+   
+    <section class="mission">
+      <h2 class="rotating-text">Hi, I'm Savanna <br> My mission</h2>
+
+      <div class="mission-content">
+        <div class="sunflower">
+          <img src="./pictures/sunflower2.jpeg" alt="Sav-sunflower">
+        </div>
+        <p>
+          At Multigrain Wellness, my mission is to empower individuals with a whole-body approach to 
+          health and wellness. Through mindful nutrition and sustainable habits, I aim to guide you 
+          toward a balanced and nourished lifestyle.
+        </p>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const missionContent = document.querySelector(".mission-content");
+    
+          function handleScroll() {
+              const sectionTop = missionContent.getBoundingClientRect().top;
+              const windowHeight = window.innerHeight;
+    
+              if (sectionTop < windowHeight * 0.75) { // Triggers animation when 75% visible
+                  missionContent.classList.add("show");
+              }
+          }
+    
+          window.addEventListener("scroll", handleScroll);
+          handleScroll(); // Check immediately if already in view
+      });
+    </script>
+
+</body>
+
+<footer>
+
+    <div class="social-media">
+        <!-- Instagram Logo -->
+        <a href="https://www.instagram.com" target="_blank" class="instagram-link">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-logo instagram-logo">
+        </a>
+        
+        <!-- Facebook Logo -->
+        <a href="https://www.facebook.com" target="_blank" class="facebook-link">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-logo facebook-logo">
+        </a>
+      
+        <!-- Pinterest Logo -->
+        <a href="https://www.pinterest.com" target="_blank" class="pinterest-link">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest" class="social-logo pinterest-logo">
+        </a>
+    </div>
+
+
+</footer>
+
+</html>

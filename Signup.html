@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multigrain Wellness</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" href="./pictures/logo.jpg">
+</head>
+
+<header>
+  <nav>
+    <div class="logo">
+        <a href="./index.html"><img src="./pictures/newlogo.png"></a>
+    </div> 
+    <ul class="nav-links">
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Recipes</a>
+          <div class="dropdown-content">
+              <a href="#">Web Design</a>
+              <a href="#">Development</a>
+              <a href="#">SEO</a>
+          </div>
+      </li>
+        <li><a href="#">Nutrition</a></li>
+        <li><a href="#">Sign up</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<body>
+  <main>
+    <section class="signup-form">
+      <h1>Sign Up</h1>
+      <form action="/submit-signup" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+        <label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email" placeholder="Enter your Email">
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="1" required>
+        
+        <label for="height">Height:</label>
+        <input type="number" id="feet" name="feet" placeholder="Feet" min="1" required>
+        <input type="number" id="inches" name="inches" placeholder="inches" min="0" required>
+
+        <label for="weight">Weight (lb):</label>
+        <input type="number" id="weight" name="weight" placeholder="Enter your weight in lb" min="1" required>
+        
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+<footer>
+
+  <div class="social-media">
+    <!-- Instagram Logo -->
+    <a href="https://www.instagram.com" target="_blank" class="instagram-link">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-logo instagram-logo">
+    </a>
+    
+    <!-- Facebook Logo -->
+    <a href="https://www.facebook.com" target="_blank" class="facebook-link">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-logo facebook-logo">
+    </a>
+  
+    <!-- Pinterest Logo -->
+    <a href="https://www.pinterest.com" target="_blank" class="pinterest-link">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest" class="social-logo pinterest-logo">
+    </a>
+</div>
+
+</footer>
+</html>
